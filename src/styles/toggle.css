@@ -1,0 +1,43 @@
+.toggle {
+  --toggle-width: 130px;
+  position: relative;
+  margin: 16px -8px -8px 0px;
+  display: flex;
+  width: var(--toggle-width);
+  align-self: flex-end;
+  background: #999;
+}
+
+.toggle .fill {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(var(--toggle-width) / 2);
+  background: royalblue;
+  transition: left .25s ease-in-out;
+}
+
+.toggle .fill.right {
+  left: calc(var(--toggle-width) / 2);
+}
+
+.toggle button {
+  width: calc(var(--toggle-width) / 2);
+  padding: 4px 0;
+  border: none;
+  cursor: pointer;
+  font-size: .75rem;
+  font-weight: 500;
+  background: none;
+  z-index: 1;
+  transition: color .25s ease-in-out;
+}
+
+.toggle button.active {
+  color: #fff;
+}
+
+.toggle,
+.toggle .fill {
+  border-radius: 30px;
+}

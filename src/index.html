@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Weather</h1>
+      <form>
+        <input
+          id="location" name="location" type="search"
+          aria-label="weather location" placeholder="City name"
+        >
+        <button>Send</button>
+      </form>
+    </div>
+  </header>
+
+  <p class="status-message hidden"></p>
+
+  <main class="hidden">
+    <div class="container">
+      <div class="weather">
+        <img class="condition-image" src="" alt="weather condition">
+        <ul>
+          <li class="temp">-6 °C</li>
+          <li class="condition"></li>
+          <li class="feels-like"><span class="title">Feels like:</span><span class="value"></span></li>
+          <li class="max"><span class="title">High:</span><span class="value"></span></li>
+          <li class="min"><span class="title">Low:</span><span class="value"></span></li>
+          <li class="wind">
+            <span class="title">Wind:</span>
+            <span class="speed value"></span>
+            <img class="arrow value">
+            <span class="direction value"></span>
+          </li>
+        </ul>
+        <div class="toggle">
+          <div class="fill"></div>
+          <button id="metric" class="active">Metric</button>
+          <button id="imperial">Imperial</button>
+        </div>
+      </div>
+
+      <div class="detail">
+        <table>
+          <tbody>
+            <tr class="wind-gust">
+              <th>Wind Gust:</th>
+              <td></td>
+            </tr>
+            <tr class="humidity">
+              <th>Humidity:</th>
+              <td></td>
+            </tr>
+            <tr class="pressure">
+              <th>Pressure:</th>
+              <td></td>
+            </tr>
+            <tr class="sunrise">
+              <th>Sunrise:</th>
+              <td></td>
+            </tr>
+            <tr class="sunset">
+              <th>Sunset:</th>
+              <td></td>
+            </tr>
+            <tr class="timezone">
+              <th>Time Zone:</th>
+              <td></td>
+            </tr>
+            <tr class="coords">
+              <th>Coords:</th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

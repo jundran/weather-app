@@ -1,0 +1,36 @@
+.weather
+  flex: 0 1 40%
+  background: #ccc
+  padding: 16px
+  border-left: 5px solid royalblue
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  li
+    margin-bottom: 4px
+
+  .condition-image
+    position: absolute
+    top: 0
+    right: 0
+
+  span.title
+    font-weight: 500
+    margin-right: 4px
+
+  .temp
+    font-size: 1.5rem
+    font-weight: 500
+
+  .condition
+    margin-bottom: 16px
+
+  .wind
+    // Make direction arrow align
+    display: flex
+    align-items: center
+    img
+      height: 16px
+      padding: 0 8px

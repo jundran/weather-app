@@ -1,0 +1,42 @@
+@import 'header.sass'
+@import 'weather.sass'
+@import 'detail.sass'
+@import 'mobile.sass'
+@import 'toggle.css'
+
+body
+  margin: 0
+  background: #eee
+  font-family: sans-serif
+  *
+    box-sizing: border-box
+
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+.hidden
+  display: none
+
+.status-message
+  margin-top: 100px
+  text-align: center
+  font-size: 1.2rem
+  font-weight: 600
+
+.container
+  width: min(100%, 900px)
+  margin: auto
+  display: flex
+  justify-content: space-between
+  padding: 0 16px
+
+header .container
+  align-items: center
+
+main .container
+  gap: 32px
+  font-size: .9rem
+  color: #111
+  padding-bottom: 32px

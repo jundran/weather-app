@@ -1,0 +1,137 @@
+header {
+  background: royalblue;
+  color: #fff;
+  margin-bottom: 32px;
+}
+header form {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+header input {
+  padding: 8px;
+  flex: 1 1 200px;
+}
+header button {
+  padding: 9px 24px;
+  border: none;
+  border-radius: 2px;
+}
+
+.weather {
+  width: 40%;
+  background: #ccc;
+  padding: 16px;
+  border-left: 5px solid royalblue;
+  position: relative;
+}
+.weather li {
+  margin-bottom: 4px;
+}
+.weather .condition-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.weather span.title {
+  font-weight: 500;
+  margin-right: 4px;
+}
+.weather .temp {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.weather .condition {
+  margin-bottom: 16px;
+}
+.weather .wind {
+  display: flex;
+  align-items: center;
+}
+.weather .wind img {
+  height: 16px;
+  padding: 0 8px;
+}
+
+.detail table {
+  border-collapse: collapse;
+}
+.detail table th, .detail table td {
+  border-bottom: 1px solid grey;
+  padding: 8px 16px;
+}
+.detail table th {
+  text-align: start;
+  font-weight: 500;
+}
+.detail table .coords td span:nth-of-type(2) {
+  margin: 0 16px;
+}
+
+@media (max-width: 800px) {
+  main .container {
+    flex-direction: column;
+  }
+  main .container .weather {
+    width: 100%;
+  }
+  main .container .detail {
+    margin: 16px 0 0 0;
+  }
+  main .container .detail table {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+  header {
+    padding-bottom: 16px;
+  }
+  header h1 {
+    margin: 8px;
+  }
+  .detail table th, .detail table td {
+    padding: 8px 4px;
+  }
+  .detail table .coords td span:nth-of-type(2) {
+    margin: 4px;
+  }
+}
+body {
+  margin: 0;
+  background: #eee;
+  font-family: sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: min(100%, 900px);
+  margin: auto;
+  padding: 0 16px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+/*# sourceMappingURL=index.css.map */
