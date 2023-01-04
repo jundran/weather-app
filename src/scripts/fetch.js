@@ -1,8 +1,8 @@
 export default async function fetchWeather(location, units) {
   const url = new URL('https://api.openweathermap.org/data/2.5/weather')
-  url.searchParams.append("q", location)
-  url.searchParams.append("units", units)
-  url.searchParams.append("appid", 'c83c5a6f08198340c3ab35401cd2129f')
+  url.searchParams.append('q', location)
+  url.searchParams.append('units', units)
+  url.searchParams.append('appid', 'c83c5a6f08198340c3ab35401cd2129f')
 
   const data = getFromLocalStorage(url)
   if(data) return data

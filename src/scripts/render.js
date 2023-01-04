@@ -38,7 +38,7 @@ function condition(condition) {
 
 function conditionIcon(icon) {
   const conditionImage = document.querySelector('.condition-image')
-  conditionImage.src = 'http://openweathermap.org/img/wn/ICON@2x.png'.replace('ICON', icon)
+  conditionImage.src = 'https://openweathermap.org/img/wn/ICON@2x.png'.replace('ICON', icon)
 }
 
 function humidity(humidity) {
